@@ -1,0 +1,436 @@
+/* Pintamos todas las cajas con borde rojo*/
+@font-face {
+    font-family: 'Inter';
+    src: url('../fuentes/Inter/Inter-Regular.ttf');
+
+}
+
+@font-face {
+    font-family: 'Romanesco';
+    src: url('../fuentes/Romanesco/Romanesco-Regular.ttf');
+
+}
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Inter';
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/*Esta es la etiqueta header <header>*/
+header {
+    font-family: 'Inter';
+    height: 70px;
+    width: 100%;
+    background-color: #a3a656;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.MenuHeader {
+    display: inline-block;
+    height: 70px;
+    width: 60%;
+    padding-left: 70px;
+}
+
+.MenuHeader ul {
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    gap: 25px;
+}
+
+
+.MenuHeader ul li:hover {
+   color: #FFFF00 ;
+}
+
+.Informacion {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+
+}
+
+
+.Informacion div {
+    float: right;
+}
+
+.ContenedorInformacion {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 40px;
+}
+
+#Micuenta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ContenedorIdioma {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.principal {
+    height: 667px;
+    text-align: left;
+    background-image: url(../images/main.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+.informacionP {
+    position: absolute;
+    left: 200px;
+    top: 200px;
+}
+
+.informacionP h2 {
+    font-family: 'Romanesco';
+    font-weight: lighter;
+    font-size: 96px;
+    color: #000000;
+    margin: 0;
+}
+
+.informacionP h5 {
+    font-family: 'Inter';
+    font-weight: semi-bold;
+    font-size: 32px;
+    color: #000000;
+    margin: 0;
+
+}
+
+.centro {
+    height: 100px;
+    background-color: #F2F6F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.reservarcita {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.reservarcita .input {
+    border-radius: 20px;
+    padding: 15px 30px;
+    border: none;
+}
+
+.reservarpromocional {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 50px;
+    border-radius: 0%;
+}
+
+.reservarpromocional .input {
+    border-radius: 20px;
+    padding: 15px 30px;
+    border: none;
+}
+
+
+.Sev {
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+    padding-top: 100px;
+}
+
+
+
+.cardpies {
+    width: 350px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+.cardpies h5 {
+    font-weight: semi-bold;
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #a3a656;
+    border-radius: 15px 15px 0 0;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-pies {
+    width: 350px;
+}
+
+#descripcions {
+    margin-top: 15px;
+    text-align: left;
+}
+
+#precio {
+    display: flex;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.cardpies .reservarpies {
+    display: flex;
+    justify-content: left;
+    border-radius: 35px;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: #a3a656;
+    color: #ffffff;
+    border: none;
+    
+}
+
+.cardpies .reservarpies:hover {
+  background-color: #384001;
+}
+
+.precioyreservar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 10px;
+}
+
+
+
+.cardcara {
+    width: 350px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+}
+
+
+.cardcara h5 {
+    font-weight: semi-bold;
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #a3a656;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-cara {
+    width: 350px;
+}
+
+
+.cardcara .reservarcara {
+    display: flex;
+    justify-content: left;
+    border-radius: 35px;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: #a3a656;
+    color: #ffffff;
+    border: none;
+}
+
+.cardcara .reservarcara:hover {
+    background-color: #384001;
+  }
+
+.cardespalda {
+    width: 350px;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.cardespalda h5 {
+    font-family: 'Inter';
+    font-weight: semi-bold;
+    font-size: 32px;
+    color: #ffffff;
+    background-color: #a3a656;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-espalda {
+    width: 350px;
+}
+
+.cardespalda .reservarespalda {
+    display: flex;
+    justify-content: left;
+    border-radius: 35px;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: #a3a656;
+    color: #ffffff;
+    border: none;
+}
+
+.cardespalda .reservarespalda:hover {
+    background-color: #384001;
+  }
+
+
+
+.Sev {
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+    padding-bottom: 80px;
+
+}
+
+
+.membrecias {
+    height: 770px;
+    background-color: #F2F6F6;
+    padding-bottom: 80px;
+
+}
+
+.contenedormembrecias {
+    display: flex;
+    justify-content: center;
+    gap: 134px;
+    padding-top: 100px;
+}
+
+.membresia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hastesocio{
+    font-size: 32px;
+    font-weight: semibold;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.gold {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.premium {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.plate{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.circulo{
+    border: 11px solid #384001;
+    width: 233px;
+    height: 233px;
+    border-radius: 50%;
+    aspect-ratio: 233px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonvercondiciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    padding: 10px 30px;
+    font-weight: bold;
+    background-color: #a3a656;
+    color: #ffffff;
+    border: none;
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+.botonvercondiciones:hover {
+    background-color: #384001;
+  }
+
+.piepagina{
+    height: 97px;
+    background-color: #384001;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.politicas{
+    list-style-type: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 70px;
+    gap: 80px;
+    color: #a3a656;
+    
+}
+
+.MenuPoliticas ul li:hover {
+    color: #FFFF00 ;
+ }
+.redessociales{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #a3a656;
+    gap: 45px;
+    margin-right: 100px;
+}
+
